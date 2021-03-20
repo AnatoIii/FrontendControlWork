@@ -1,0 +1,51 @@
+.form {
+    width: 300px;
+    padding: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.title, .description {
+    margin-bottom: 10px;
+    label {
+        display: block;
+        font-size: 0.8em;
+        color: #555555;
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+
+    input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #9ec0ff;
+        width: calc(100% - 8px);
+        padding: 4px;
+    }
+    textarea {
+        border: 1px solid #9ec0ff;
+        border-radius: 2px;
+        outline: none;
+        width: calc(100% - 8px);
+        height: 50px;
+        padding: 4px;
+    }
+}
+
+button {
+    width: 70px;
+    background: none;
+    border: 1px solid #266cee;
+    border-radius: 3px;
+    cursor: pointer;
+    background: #9ec0ff;
+    padding: 5px;
+    margin-left: 232px;
+
+    &:hover {
+        background: #266cee;
+        color: white;
+    }
+}
