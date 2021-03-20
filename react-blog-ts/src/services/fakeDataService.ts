@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Post } from '../models/Post';
 import { User } from '../models/User';
 
-const apiUrl = 'https://6055216ed4d9dc001726e7ac.mockapi.io/api/cw/'
+const apiUrl = 'https://6055216ed4d9dc001726e7ac.mockapi.io/api/cw';
 
 class FakeDataService {
     getUser() {

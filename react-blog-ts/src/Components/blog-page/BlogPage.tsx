@@ -103,7 +103,12 @@ const BlogPage: React.FunctionComponent = () => {
                         <p className={styles.description}>{post.description}</p>
                         <div className={styles.bottom}>
                             <p>{formatDate(post.createdAt)}</p>
-                            <p className={styles.likes}><img src={heart} width="10px"/>{post.likes}</p>
+                            {
+                                post.likes !== undefined && post.likes > 0 ? (
+                                    <p className={styles.likes}><img src={heart} width="10px"/>{post.likes}</p>
+                                ) : ''
+                            }
+                            
                         </div>
                     </div>
                 ))}

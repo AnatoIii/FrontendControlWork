@@ -50,7 +50,8 @@ const SaveModal: React.FunctionComponent<Props> = ({
         const post: Post = {
             title,
             description,
-            createdAt: new Date()
+            createdAt: new Date(),
+            likes: 0
         };
 
         if (!!editedPost) {

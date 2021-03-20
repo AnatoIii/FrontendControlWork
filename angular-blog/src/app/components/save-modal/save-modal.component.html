@@ -1,0 +1,15 @@
+<div class="form">
+    <h2>{{ createEditText() }} post</h2>
+    <form (ngSubmit)="submitSave()">
+        <div class="title">
+            <label>Title</label>
+            <input placeholder="Title" name="title" required minLength="5" [(ngModel)]="title" /> 
+        </div>
+        <div class="description">
+            <label>Description</label>
+            <textarea name="description" [(ngModel)]="description"> </textarea> 
+        </div>
+        <div class="error">{{ error }}</div>
+        <button type="submit">{{ createEditText() }}</button>
+    </form>
+</div>
